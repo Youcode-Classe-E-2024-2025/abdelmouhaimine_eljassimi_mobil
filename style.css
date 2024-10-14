@@ -269,3 +269,19 @@ body, html {
 .contact .ctn form button:hover{
     box-shadow: 3px 3px 15px rgba(255, 92, 4, 0.384);
 }
+.maps{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.maps img{
+    width: 500px;
+    height: 350px;
+    margin-top: 20px;
+}
+.maps p{
+    margin-top: 5px;
+    color: #656565;
+    font-weight: 200;
+}
