@@ -145,12 +145,15 @@ body, html {
     display: flex;
     flex-direction: column;
     align-items: center;
+    align-self: center;
+    justify-content: start;
+}
+.about .title2{
     background-color: #f1f1f1;
     border-radius: 8px;
     width: 400px;
     height: 350px;
-    align-self: center;
-    justify-content: start;
+    margin-top: 20px;
 }
 .about .abt .paragraphe {
     display: flex;
@@ -187,4 +190,82 @@ body, html {
     display: flex;
     justify-content: center;
     
+}
+.contact{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-self: center;
+}
+.contact .ctn {
+    display: flex;
+    flex-direction: column;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    width: 400px;
+    height: 350px;
+    margin-top: 20px;
+}
+.contact .ctn h3{
+    margin-top: 40px;
+    margin-left: 20px;
+}
+.contact .ctn p{
+    font-size: 10px;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-weight: 500;
+}
+.contact .ctn form{
+    margin-top: 20px;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact .ctn form input{
+    border: none;
+    height: 25px;
+    outline: none;
+}
+.contact .ctn form input:focus{
+    border: 2px solid #FF6900;
+    box-shadow: 0px 0px 5px rgba(255, 105, 0, 0.5);
+
+}
+.contact .ctn form .name input::placeholder{
+    font-size: 10px;
+    padding-left: 10px;
+}
+.contact .ctn form .num input::placeholder{
+    font-size: 10px;
+    padding-left: 10px;
+}
+
+.contact .ctn form #msg{
+    margin-top: 5px;
+    width: 335px;
+    height: 100px;
+}
+.contact .ctn form #msg::placeholder{
+    font-size: 10px;
+    padding-left: 10px;
+}
+.num{
+    margin-top: 5px;
+}
+.contact .ctn form button{
+    margin-top: 20px;
+    width: 100px;
+    border: none;
+    background-color: #FF6900;
+    color: white;
+    border-radius: 4px;
+    height: 20px;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+}
+.contact .ctn form button:hover{
+    box-shadow: 3px 3px 15px rgba(255, 92, 4, 0.384);
 }
