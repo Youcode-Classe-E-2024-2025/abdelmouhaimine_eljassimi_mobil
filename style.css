@@ -1,48 +1,54 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
     font-family: sans-serif;
 }
-.body{
-
-}
-.container{
-
-}
-.navbar ul{
-    display: flex;
-    justify-content: space-between;
-    text-decoration: none;
-    list-style-type: none;
-}
-.navbar ul li img{
- width: 60px;
- margin: 0px 30px;
-}
-.navbar ul .menu{
-    display: flex;
-    justify-content: space-between;
-    gap : 20px ;
-    margin : 20px;
+body, html {
+    width: 100%;
+    overflow-x: hidden;
     
 }
-.navbar ul .menu li a{
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    list-style-type: none;
+    height: 60px;
+}
+
+.navbar ul li img {
+    width: 40px;
+    margin: 10px 30px;
+}
+
+.navbar ul .menu {
+    display: flex;
+    gap: 20px;
+    margin: 20px;
+}
+
+.navbar ul .menu li a {
     text-decoration: none;
     color: black;
     font-weight: 400;
 }
-.navbar ul li i{
+
+.navbar ul li i {
     font-size: 30px;
     margin-right: 40px;
+    position: relative;
+    transition: 0.5s ease;
 }
-.navbar ul li i:hover{
+
+.navbar ul li i:hover {
     color: #FF6900;
 }
 
-.navbar ul .menu li a:hover{
-     color: #FF6900;
-     
+.navbar ul .menu li a:hover {
+    color: #FF6900;
 }
+
 .navbar ul li div {
     width: 15px;
     height: 15px;
@@ -51,9 +57,134 @@
     color: white;
     font-weight: 400;
     font-size: 10px;
-    z-index: 1;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
+    z-index: 1;
+    margin-left: 20px;
 }
 
+.container {
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.slider .sld {
+    width: 100%;
+    max-width: 100%;
+    height: 600px; 
+}
+.panier{
+    margin-top: 10px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.title h3{
+    font-weight: 200;
+    color: #656565;
+}
+.phones .phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f1f1f1;
+    height: 230px;
+    width: 200px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.phone:hover {
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.171); /* Ombre douce au survol */
+}
+/* .phones .phone :hover{
+    box-shadow: 5px 5px 15px 5px #333;
+} */
+.phones .phone img{
+    width: 150px;
+}
+.phones .phone h3{
+    font-size: 15px;
+    margin-bottom: 10px;
+}
+.phones .phone button{
+    width: 100px;
+    background-color: #FF6900;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    height: 20px ;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+.phones .phone button:hover{
+    box-shadow: 3px 3px 15px rgba(255, 92, 4, 0.384);
+}
+.phones{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+.top, .bottom {
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+}
+.about{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    border-radius: 8px;
+    width: 400px;
+    height: 350px;
+    align-self: center;
+    justify-content: start;
+}
+.about .abt .paragraphe {
+    display: flex;
+    justify-content: center;
+}
+.about .abt .paragraphe p{
+    font-size: 10px;
+    width: 380px ;
+    margin-top: 10px;
+    text-align: center;
+    
+}
+.about .abt h3{
+    display: flex;
+    justify-content: center;
+    margin-top: 5px;
+    font-weight: 200;
+    color: #656565;
+}
+
+.about .abt .img{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.about .abt img{
+   width: 200px;
+   margin-top: 10px;
+   box-shadow: 3px 3px 15px rgba(1, 1, 1, 0.384);
+}
+.about .title2 h2{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    
+}
