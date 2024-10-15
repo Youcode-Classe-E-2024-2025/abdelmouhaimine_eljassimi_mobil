@@ -287,7 +287,6 @@ body, html {
     outline: none;
 }
 .contact .ctn form input:focus{
-    border: 2px solid #FF6900;
     box-shadow: 0px 0px 5px rgba(255, 105, 0, 0.5);
 
 }
@@ -299,16 +298,24 @@ body, html {
     font-size: 10px;
     padding-left: 10px;
 }
-
-.contact .ctn form #msg{
+#textarea{
     margin-top: 5px;
-    width: 335px;
+    border: none;
+    border-radius: 2px;
+    outline: none;
+}
+#textarea::placeholder {
+    font-size: 12px;
+    padding-left: 7px;
     height: 100px;
+    padding-top: 7px;
 }
-.contact .ctn form #msg::placeholder{
-    font-size: 10px;
-    padding-left: 10px;
+textarea:focus{
+    border: 2px solid #FF6900;
+    box-shadow: 0px 0px 5px rgba(255, 105, 0, 0.5);
+
 }
+
 .num{
     margin-top: 5px;
 }
@@ -494,5 +501,8 @@ body, html {
 }
 .sld{
     margin-top: 10px;
+}
+#textarea{
+    width: 330px;
 }
 }
