@@ -387,14 +387,12 @@ textarea:focus{
     }
     
 
-    .phones .top, .bottom{
+    .smartphone-mobil .phones .top, .bottom{
         display: flex;
         flex-direction: column;
         gap: 10px;
     }
-    .smartphone{
-        display: none;
-    }
+
     .smartphone-mobil{
         display: flex;
         flex-direction: column;
@@ -402,7 +400,7 @@ textarea:focus{
         justify-content: center;
     }
     .container #smartphone{
-        display: none;
+        display: none; 
     }
     .about .title2 {
         width: 380px;
@@ -502,8 +500,12 @@ textarea:focus{
     text-align: center;
     width: 80%;
 }
+.slider{
+    height: 300px;
+}
 .sld{
     margin-top: 10px;
+    height: 100%;
 }
 #textarea{
     width: 330px;
