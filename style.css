@@ -199,7 +199,7 @@ body, html {
     padding: 30px;
 }
 .about{
-    margin-top: 30px;
+    margin-top: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -337,6 +337,8 @@ body, html {
     border: none;
     border-radius: 10px;
     outline: none;
+    height: 120px;
+    width: 450px;
 }
 #textarea::placeholder {
     font-size: 12px;
@@ -418,6 +420,15 @@ textarea:focus{
     }
     .about .title2 {
         width: 380px;
+    }
+    .contact textarea{
+        height: 75px;
+    }
+    .contact form .num input {
+        width: 150px;
+    }
+    .contact form .name input {
+        width: 150px;
     }
     .contact .ctn{
         width: 380px;
